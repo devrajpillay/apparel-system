@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> RedStore | Ecommerce Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"> -->
+</head>
+
+<body>
+    <div class="lux-stars"></div>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/loro piana down.png" width="200px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="login index.html">Login</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html" class="cart-icon-link" aria-label="View cart">
+                    <img src="images/Trolley_Cart_free_icons_designed_by_uicon-removebg-preview.png" width="30px"
+                        height="30px" alt="Cart icon">
+                </a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row hero-row">
+                <div class="col-2 hero-copy">
+                    <p class="eyebrow">New Collection 2024</p>
+                    <h1>Timeless Elegance,<br>Modern Poise.</h1>
+                    <p class="lead">Step into sophistication with Old Money Clothing. Discover pieces inspired by
+                        curated wardrobes and tactile minimalism—crafted to feel luxurious every day.</p>
+                    <div class="hero-actions">
+                        <a href="myexplore.html" class="btn primary-btn">Explore More &#8594;</a>
+                        <a href="products.html" class="btn ghost-btn">Shop the Edit</a>
+                    </div>
+                </div>
+                <div class="col-2 hero-visual">
+                    <div class="hero-frame">
+                        <img src="images/brandon king ⇒ god of fury.jpeg" alt="Editorial look from the latest drop">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- featured categories-->
+    <div class="categories section-lux">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/fashion model aesthetic.jpeg">
+                </div>
+                <div class="col-3">
+                    <img src="images/Old money couple.jpeg">
+                </div>
+                <div class="col-3">
+                    <img src="images/3rd model.jpeg">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!----featured products----->
+    <div class="small-container section-lux product-showcase" id="products">
+        <h2>Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/JAQUETA ACOLCHOADA DE POLIURETANO.jpg">
+                <h4>Leather Jacket</h4>
+                <div class="rating">
+
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$60.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/Loro Piana - Cashmere Polo Sweater - Cream - IT44.jpg">
+                <h4>Polo sweatshirt</h4>
+                <div class="rating">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <p>$80.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/ZARA Knitted Polo Shirts Polos.jpg">
+                <h4>Polo Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$40.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/HIGH-WAISTED ZW MARINE STRAIGHT JEANS.jpg">
+                <h4>Bell Bottoms</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$55.00</p>
+            </div>
+        </div>
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img
+                    src="images/Loro Piana - Yurik Checked Herringbone Cashmere Straight-leg Pants - Brown - IT42.jpeg">
+                <h4>Linen pants</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <p>$60.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/Loro Piana - Kara Striped Silk Shirt - Off-white - IT48.jpeg">
+                <h4>Full-sleeves</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>$80.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/Loro Piana - Keelan Two-tone Padded Twill Track Pants - Off-white - IT44.jpeg">
+                <h4>Track pants</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$40.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/Loro Piana - Open-knit Cotton Hoodie - White - IT46.jpeg">
+                <h4>Hoodie</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$55.00</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/LORO PIANA Nyack pleated linen and wool-blend wide-leg pants.jpeg">
+                <h4>Pants</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <p>$60.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/LORO PIANA Gravel Shearling-Lined  Suede Hiking Boots for Men.jpeg">
+                <h4>High tops</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>$80.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/Mytheresa - The Finest Edit in Luxury.jpeg">
+                <h4>Loafers</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$40.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/LORO PIANA Ribbed Cashmere Rollneck Sweater for Men.jpeg">
+                <h4>Sweatshirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$55.00</p>
+            </div>
+        </div>
+        <h2 class="title">Curated Exclusives</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/LORO PIANA Newcastle asymmetric suede-trimmed wool and cashmere-blend cardigan.jpeg">
+                <h4>Newcastle Cardigan</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$120.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/Women's Jackets _ ZARA United Kingdom.jpg">
+                <h4>Opal Trench</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$150.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/PADOVESI™ _ Old Money Luxury Watch - Silver & Black.jpeg">
+                <h4>Padovesi Watch</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>$220.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/LORO PIANA Leather straight-leg pants.jpeg">
+                <h4>Leather Trouser</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$185.00</p>
+            </div>
+        </div>
+    </div>
+    <section class="small-container section-lux cart-panel-wrapper" id="cart-summary">
+        <div class="cart-panel">
+            <div class="cart-panel-header">
+                <h3>Added to Cart</h3>
+                <p>Use the + / - controls on any product to adjust quantities in real time.</p>
+            </div>
+            <ul id="cart-items-list" class="cart-items"></ul>
+            <div class="cart-panel-footer">
+                <div class="cart-total-row">
+                    <span>Total</span>
+                    <strong id="cart-total-amount">$0.00</strong>
+                </div>
+                <button class="btn primary-btn checkout-btn" id="checkout-btn" type="button" disabled>Proceed to Checkout</button>
+            </div>
+        </div>
+    </section>
+    <!-- offer -->
+    <div class="offer section-lux">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/bg rmv watch.png" class="offer-img" height="450px">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively available in our outlets</p>
+                    <h1>Vacheron Constantin</h1>
+                    <small>The Vacheron Constantin watch captures the essence of automotive passion, combining sleek
+                        design with meticulous craftsmanship, making it a must-have for enthusiasts and connoisseurs
+                        alike.</small>
+                    <a href="" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- test imonial -->
+    <div class="testimonial section-lux">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ab optio sunt minima eveniet fugit,
+                        qui
+                        expedita illo odio reprehenderit at voluptas dignissimos tenetur adipisci vero pariatur ut!
+                        Sint,
+                        sapiente.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/Studio Business Headshots — S72 BUSINESS PORTRAITS.jpeg">
+                    <h3>William Butcher</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ab optio sunt minima eveniet fugit,
+                        qui
+                        expedita illo odio reprehenderit at voluptas dignissimos tenetur adipisci vero pariatur ut!
+                        Sint,
+                        sapiente.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/Miami headshots for professionals _22PORTRAITS.jpeg">
+                    <h3>Marry Parker</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ab optio sunt minima eveniet fugit,
+                        qui
+                        expedita illo odio reprehenderit at voluptas dignissimos tenetur adipisci vero pariatur ut!
+                        Sint,
+                        sapiente.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/Studio Headshots on Location in London Samples of….jpeg">
+                    <h3>Hardin Scott</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- brands -->
+    <div class="brands section-lux">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="images/images/logo-godrej.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/images/logo-coca-cola.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/images/logo-oppo.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/images/logo-paypal.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/images/logo-philips.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer section-lux">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/D&G bg rm.png">
+                    <p> "To empower individuals through fashion, offering unique, high-quality clothing that inspires
+                        confidence and celebrates personal style."</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2024 - Dev project</p>
+        </div>
+    </div>
+    <!-- ----------------------js for toggle menu-------------------- -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        if (MenuItems) {
+            MenuItems.style.maxHeight = "0px";
+        }
+
+        function menutoggle() {
+            if (!MenuItems) return;
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+        (function initMiniCart() {
+            const productCards = document.querySelectorAll('.product-showcase .col-4');
+            const cartList = document.getElementById('cart-items-list');
+            const cartTotal = document.getElementById('cart-total-amount');
+            const checkoutBtn = document.getElementById('checkout-btn');
+
+            if (!productCards.length || !cartList || !cartTotal || !checkoutBtn) {
+                return;
+            }
+
+            const STORAGE_KEY = 'luxe-cart-items';
+            const currency = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
+            const cartState = {};
+            const cardRefs = new Map();
+
+            function formatCurrency(value) {
+                return currency.format(value);
+            }
+
+            function persistCart() {
+                try {
+                    localStorage.setItem(STORAGE_KEY, JSON.stringify(cartState));
+                } catch (error) {
+                    console.warn('Unable to save cart', error);
+                }
+            }
+
+            function renderCart() {
+                cartList.innerHTML = '';
+                const items = Object.values(cartState);
+
+                if (!items.length) {
+                    const empty = document.createElement('li');
+                    empty.className = 'empty-cart';
+                    empty.textContent = 'No items added yet.';
+                    cartList.appendChild(empty);
+                } else {
+                    items.forEach((item) => {
+                        const li = document.createElement('li');
+                        li.className = 'cart-item';
+
+                        const meta = document.createElement('div');
+                        meta.className = 'cart-item-meta';
+
+                        const title = document.createElement('strong');
+                        title.textContent = item.title;
+
+                        const detail = document.createElement('span');
+                        detail.textContent = `${item.quantity} × ${formatCurrency(item.price)}`;
+
+                        meta.appendChild(title);
+                        meta.appendChild(detail);
+
+                        const subtotal = document.createElement('span');
+                        subtotal.className = 'cart-item-subtotal';
+                        subtotal.textContent = formatCurrency(item.quantity * item.price);
+
+                        li.appendChild(meta);
+                        li.appendChild(subtotal);
+                        cartList.appendChild(li);
+                    });
+                }
+
+                const total = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
+                cartTotal.textContent = formatCurrency(total);
+                checkoutBtn.disabled = items.length === 0;
+            }
+
+            function adjustQuantity(card, delta) {
+                const id = card.dataset.productId;
+                const title = card.dataset.productTitle;
+                const price = Number(card.dataset.productPrice || 0);
+                const image = card.dataset.productImage;
+                const current = cartState[id]?.quantity || 0;
+                const next = Math.max(0, current + delta);
+                const valueEl = card.querySelector('.qty-value');
+                if (valueEl) {
+                    valueEl.textContent = next;
+                }
+
+                if (next === 0) {
+                    delete cartState[id];
+                } else {
+                    cartState[id] = { id, title, price, image, quantity: next };
+                }
+
+                renderCart();
+                persistCart();
+            }
+
+            productCards.forEach((card, index) => {
+                const title = card.querySelector('h4')?.textContent?.trim() || `Product ${index + 1}`;
+                const priceText = card.querySelector('p')?.textContent || '$0';
+                const price = parseFloat(priceText.replace(/[^0-9.]/g, '')) || 0;
+                const image = card.querySelector('img')?.getAttribute('src') || '';
+                const id = `${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-${index}`;
+
+                card.dataset.productId = id;
+                card.dataset.productTitle = title;
+                card.dataset.productPrice = price;
+                card.dataset.productImage = image;
+                cardRefs.set(id, card);
+
+                const actions = document.createElement('div');
+                actions.className = 'product-actions';
+
+                const controls = document.createElement('div');
+                controls.className = 'quantity-controls';
+                controls.innerHTML = `
+                    <button class="qty-btn" type="button" data-action="decrement" aria-label="Decrease ${title} quantity">-</button>
+                    <span class="qty-value" aria-live="polite">0</span>
+                    <button class="qty-btn" type="button" data-action="increment" aria-label="Increase ${title} quantity">+</button>
+                `;
+
+                actions.appendChild(controls);
+                card.appendChild(actions);
+
+                controls.addEventListener('click', (event) => {
+                    if (event.target.matches('button[data-action="increment"]')) {
+                        adjustQuantity(card, 1);
+                    }
+                    if (event.target.matches('button[data-action="decrement"]')) {
+                        adjustQuantity(card, -1);
+                    }
+                });
+            });
+
+            function hydrateCart() {
+                try {
+                    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+                    Object.values(saved).forEach((item) => {
+                        cartState[item.id] = item;
+                        const card = cardRefs.get(item.id);
+                        if (card) {
+                            const valueEl = card.querySelector('.qty-value');
+                            if (valueEl) {
+                                valueEl.textContent = item.quantity;
+                            }
+                        }
+                    });
+                } catch (error) {
+                    console.warn('Unable to restore saved cart', error);
+                }
+                renderCart();
+            }
+
+            hydrateCart();
+
+            checkoutBtn.addEventListener('click', () => {
+                persistCart();
+                window.location.href = 'cart.html';
+            });
+        })();
+
+    </script>
+</body>
+
+</html>

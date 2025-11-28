@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | RedStore Luxe</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="lux-stars"></div>
+    <div class="header cart-header section-lux">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/loro piana down.png" width="160px" alt="Logo">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="brand.html">Home</a></li>
+                        <li><a href="brand.html#products">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="login index.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html" class="cart-icon-link" aria-label="View cart">
+                    <img src="images/Trolley_Cart_free_icons_designed_by_uicon-removebg-preview.png" width="30px"
+                        height="30px" alt="Cart">
+                </a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" alt="Menu">
+            </div>
+            <div class="cart-hero-copy">
+                <p class="eyebrow">Your curated edit</p>
+                <h1>Cart &amp; Concierge</h1>
+                <p class="lead">Review your selections, adjust quantities, and proceed with a click. Every piece ships
+                    with bespoke packaging and priority support.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="cart-page section-lux">
+        <div class="small-container">
+            <div class="cart-grid">
+                <div class="cart-table-wrapper">
+                    <table class="cart-table">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Details</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="cart-product">
+                                    <img src="images/LORO PIANA Mélange cashmere sweater.jpeg" alt="Cashmere sweater">
+                                    <div>
+                                        <h4>Mélange Cashmere Sweater</h4>
+                                        <p>Size M · Soft Rose</p>
+                                    </div>
+                                </td>
+                                <td>Hand-knit cashmere with silk lining</td>
+                                <td>
+                                    <span class="quantity-pill">2</span>
+                                </td>
+                                <td>$320.00</td>
+                            </tr>
+                            <tr>
+                                <td class="cart-product">
+                                    <img src="images/LORO PIANA Cashmere track pants.jpeg" alt="Track pants">
+                                    <div>
+                                        <h4>Cashmere Track Pants</h4>
+                                        <p>Size S · Pearl</p>
+                                    </div>
+                                </td>
+                                <td>Elastic waist · Concealed pockets</td>
+                                <td>
+                                    <span class="quantity-pill">1</span>
+                                </td>
+                                <td>$210.00</td>
+                            </tr>
+                            <tr>
+                                <td class="cart-product">
+                                    <img src="images/PADOVESI™ _ Old Money Luxury Watch - Silver & Black.jpeg" alt="Watch">
+                                    <div>
+                                        <h4>Padovesi Chronograph</h4>
+                                        <p>38mm · Silver on Noir</p>
+                                    </div>
+                                </td>
+                                <td>Sapphire glass · 5ATM</td>
+                                <td>
+                                    <span class="quantity-pill">1</span>
+                                </td>
+                                <td>$540.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <aside class="cart-summary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span>$1,070.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping</span>
+                        <span>Complimentary</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Luxury Care</span>
+                        <span>$30.00</span>
+                    </div>
+                    <div class="summary-total">
+                        <span>Total</span>
+                        <span>$1,100.00</span>
+                    </div>
+                    <a href="#" class="btn primary-btn summary-btn">Proceed to Checkout</a>
+                    <a href="brand.html" class="btn ghost-btn summary-btn">Continue Shopping</a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <section class="small-container section-lux suggested-products">
+        <h2 class="title">You May Also Love</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/LORO PIANA Newcastle asymmetric suede-trimmed wool and cashmere-blend cardigan.jpeg"
+                    alt="Cardigan">
+                <h4>Wool Cashmere Cape</h4>
+                <p>$260.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/Old Money Aesthetic - Vintage Outfits For Men - Rich Italian New York European Fashion Ideas.jpg"
+                    alt="Suit">
+                <h4>Verona Suit Set</h4>
+                <p>$420.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/SAINT LAURENT Cassandre embellished leather belt.jpeg" alt="belt">
+                <h4>Cassandre Belt</h4>
+                <p>$180.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/Boyfriend Mini Elevate Gold Green 31mm.jpeg" alt="Watch">
+                <h4>Elevate Gold Watch</h4>
+                <p>$295.00</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer section-lux">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Need Assistance?</h3>
+                    <p>Our concierge is on call 24/7 for wardrobe styling and order support.</p>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/D&G bg rm.png" alt="Brand">
+                    <p>Where tailoring meets technology.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>Gift Cards</li>
+                        <li>Lookbook</li>
+                        <li>Careers</li>
+                        <li>Policies</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>LinkedIn</li>
+                        <li>Pinterest</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">RedStore Luxe © 2024</p>
+        </div>
+    </div>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        if (MenuItems) {
+            MenuItems.style.maxHeight = "0px";
+        }
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "220px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>
+
